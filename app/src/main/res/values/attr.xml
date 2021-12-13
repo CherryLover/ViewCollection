@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GameGuideView">
+        <!--        具体用法，参见 kit_base 库中的 GameGuideActivity 或 GameGuideView 的源码-->
+        <!--        描边线宽-->
+        <attr name="gv_border_width" format="dimension" />
+        <!--        圆角大小-->
+        <attr name="gv_corner_radius" format="dimension" />
+        <!--        三角形是否水平居中-->
+        <attr name="gv_arrow_center_in_rect" format="boolean" />
+        <!--        三角形底边长度-->
+        <attr name="gv_arrow_base_length" format="dimension" />
+        <!--        左顶点相对坐标-->
+        <attr name="gv_arrow_base_length_ratio" format="float" />
+        <!--        三角形高度-->
+        <attr name="gv_arrow_height" format="dimension" />
+        <!--        三角形相对偏移百分比尺寸 0 靠左 1靠右-->
+        <attr name="gv_arrow_top_ratio" format="float" />
+        <!--        提示标题-->
+        <attr name="gv_title" format="string" />
+        <!--        提示内容-->
+        <attr name="gv_content" format="string" />
+        <!--        提示换行长度-->
+        <attr name="gv_text_wrap_width" format="dimension" />
+        <!--        提示内容对齐方式-->
+        <attr name="gv_content_alignment" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <!--        水平方向的文字边距-->
+        <attr name="gv_text_margin_h" format="dimension" />
+        <!--        垂直方向的文字边距-->
+        <attr name="gv_text_margin_v" format="dimension" />
+        <!--        标题和内容的间距-->
+        <attr name="gv_title_content_space" format="dimension" />
+        <!--        三角形的方向-->
+        <attr name="gv_arrow_diction" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+        <!--        描边渐变色-->
+        <attr name="gv_border_color_1" format="color" />
+        <attr name="gv_border_color_2" format="color" />
+        <!--        填充渐变色-->
+        <attr name="gv_fill_color_1" format="color" />
+        <attr name="gv_fill_color_2" format="color" />
+        <!--        内容行间距倍数-->
+        <attr name="gv_text_line_spacing_multiplier" format="float" />
+        <!--        标题文字大小-->
+        <attr name="gv_title_text_size" format="dimension" />
+        <!--        内容文字大小-->
+        <attr name="gv_content_text_size" format="dimension" />
+    </declare-styleable>
+</resources>

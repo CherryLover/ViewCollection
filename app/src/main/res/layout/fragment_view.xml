@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="HardcodedText">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
-        android:text="Android 自定义 View 合集"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Android 自定义 View 合集"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EF00D2"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="2dp"
+                android:text="这是血量"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+
+            <me.monster.viewcollection.widget.GameGuideView
+                android:id="@+id/ggvBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:gv_arrow_base_length="20dp"
+                app:gv_arrow_base_length_ratio="0.45"
+                app:gv_arrow_center_in_rect="false"
+                app:gv_arrow_diction="top"
+                app:gv_arrow_height="10dp"
+                app:gv_arrow_top_ratio="0.5"
+                app:gv_border_width="3dp"
+                app:gv_content="这是你的血量，你马上就没血了"
+                app:gv_content_alignment="center"
+                app:gv_corner_radius="8dp"
+                app:gv_text_margin_h="18dp"
+                app:gv_text_margin_v="10dp"
+                app:gv_text_wrap_width="180dp"
+                app:gv_title="血量提示"
+                app:layout_constraintEnd_toEndOf="@id/tvBlood"
+                app:layout_constraintStart_toStartOf="@id/tvBlood"
+                app:layout_constraintTop_toBottomOf="@id/tvBlood" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

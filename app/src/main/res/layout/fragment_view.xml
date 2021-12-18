@@ -65,5 +65,13 @@
                 app:layout_constraintTop_toBottomOf="@id/tvBlood" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <me.monster.viewcollection.widget.GameOptionButtonLayout
+            android:id="@+id/goblReady"
+            android:layout_gravity="ce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:gobl_opt_type="ready"
+            app:gobl_show_wave="true" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

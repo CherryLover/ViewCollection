@@ -20,4 +20,17 @@ class ViewFragment : Fragment() {
         return vBinding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        var goblAnim = true
+        vBinding.goblReady.setOnClickListener {
+            if (goblAnim) {
+                vBinding.goblReady.showAnimation()
+            } else {
+                vBinding.goblReady.stopAnimation()
+            }
+            goblAnim = !goblAnim
+        }
+    }
+
 }

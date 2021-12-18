@@ -52,4 +52,21 @@
         <!--        内容文字大小-->
         <attr name="gv_content_text_size" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="GameOptionButton">
+        <attr name="gob_show_wave" format="boolean" />
+        <attr name="gob_opt_type" format="enum">
+            <enum name="start" value="0" />
+            <enum name="match" value="1" />
+            <enum name="ready" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GameOptionButtonLayout">
+        <attr name="gobl_show_wave" format="boolean" />
+        <attr name="gobl_opt_type" format="enum">
+            <enum name="start" value="0" />
+            <enum name="match" value="1" />
+            <enum name="ready" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>

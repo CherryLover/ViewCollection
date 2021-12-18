@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import me.monster.viewcollection.databinding.FragmentViewBinding
+import me.monster.viewcollection.page.sub.bottomsheet.BottomSheetPlusDialog
 
 /**
  * @description
@@ -31,6 +32,7 @@ class ViewFragment : Fragment() {
             }
             goblAnim = !goblAnim
         }
+        vBinding.btnBottomSheetDialog.setOnClickListener { BottomSheetPlusDialog.show(requireActivity()) }
     }
 
 }

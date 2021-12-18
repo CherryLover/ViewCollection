@@ -69,4 +69,14 @@
             <enum name="ready" value="2" />
         </attr>
     </declare-styleable>
+    <declare-styleable name="SpaceView">
+        <!--        最小高度-->
+        <attr name="spaceMinHeight" format="dimension" />
+        <!--        直接到最小高度时的阈值-->
+        <attr name="spaceToMinLevel" format="dimension" />
+        <!--        直接到最大高度时的阈值-->
+        <attr name="spaceToMaxLevel" format="dimension" />
+        <!--        默认展示高度-->
+        <attr name="spaceDefaultHeight" format="dimension" />
+    </declare-styleable>
 </resources>

@@ -9,6 +9,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
@@ -68,10 +69,15 @@
 
         <me.monster.viewcollection.widget.GameOptionButtonLayout
             android:id="@+id/goblReady"
-            android:layout_gravity="ce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:gobl_opt_type="ready"
             app:gobl_show_wave="true" />
+
+        <Button
+            android:id="@+id/btnBottomSheetDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="底部弹窗" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

@@ -85,7 +85,7 @@ class BottomSheetPlusDialog : DialogFragment() {
             dia.window?.let { win ->
                 val tempAttr = win.attributes
                 tempAttr.width = ViewGroup.LayoutParams.MATCH_PARENT
-                tempAttr.height = ViewGroup.LayoutParams.MATCH_PARENT
+                tempAttr.height = win.decorView.resources.displayMetrics.heightPixels
                 win.setBackgroundDrawableResource(android.R.color.transparent)
                 tempAttr.verticalMargin = 0F
                 tempAttr.horizontalMargin = 0F

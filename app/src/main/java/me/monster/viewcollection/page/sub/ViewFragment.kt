@@ -33,6 +33,8 @@ class ViewFragment : Fragment() {
             goblAnim = !goblAnim
         }
         vBinding.btnBottomSheetDialog.setOnClickListener { BottomSheetPlusDialog.show(requireActivity()) }
+        vBinding.lgpvLeft.setOnClickListener { vBinding.lgpvLeft.startProgress() }
+        vBinding.lgpvRight.setOnClickListener { vBinding.lgpvRight.startProgress() }
     }
 
 }

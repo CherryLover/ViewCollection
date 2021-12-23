@@ -79,4 +79,22 @@
         <!--        默认展示高度-->
         <attr name="spaceDefaultHeight" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="LinearGradientProgressView">
+        <!--        边框线颜色-->
+        <attr name="lgpv_border_color" format="color" />
+        <!--        填充渐变色左侧（渐变从左往右，垂直方向居中）-->
+        <attr name="lgpv_fill_color_left" format="color" />
+        <!--        填充渐变色左侧（渐变从左往右，垂直方向居中）-->
+        <attr name="lgpv_fill_color_right" format="color" />
+        <!--        箭头方向-->
+        <attr name="lgpv_arrow_direction" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <!--        动画方向-->
+        <attr name="lgpv_animation_direction" format="enum">
+            <enum name="toRound" value="0" />
+            <enum name="fromRound" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>

@@ -79,5 +79,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="底部弹窗" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <me.monster.viewcollection.widget.LinearGradientProgressView
+                android:id="@+id/lgpvLeft"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                app:lgpv_animation_direction="fromRound"
+                app:lgpv_arrow_direction="left" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <me.monster.viewcollection.widget.LinearGradientProgressView
+                android:id="@+id/lgpvRight"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                app:lgpv_animation_direction="fromRound"
+                app:lgpv_arrow_direction="right" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

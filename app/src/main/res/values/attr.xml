@@ -97,4 +97,10 @@
             <enum name="fromRound" value="1" />
         </attr>
     </declare-styleable>
+    <declare-styleable name="LightPathView">
+        <!--        圆角填充色-->
+        <attr name="lpv_cornerColor" format="color" />
+        <!--        开发阶段的路径-->
+        <attr name="lpv_showDebugPath" format="color" />
+    </declare-styleable>
 </resources>

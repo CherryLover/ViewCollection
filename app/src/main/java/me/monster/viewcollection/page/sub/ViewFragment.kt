@@ -35,6 +35,8 @@ class ViewFragment : Fragment() {
         vBinding.btnBottomSheetDialog.setOnClickListener { BottomSheetPlusDialog.show(requireActivity()) }
         vBinding.lgpvLeft.setOnClickListener { vBinding.lgpvLeft.startProgress() }
         vBinding.lgpvRight.setOnClickListener { vBinding.lgpvRight.startProgress() }
+        vBinding.btnLpvPlay.setOnClickListener { vBinding.lpvLight.pathAnimation(1500) }
+        vBinding.btnLpvPause.setOnClickListener { vBinding.lpvLight.stopAnim() }
     }
 
 }
